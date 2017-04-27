@@ -55,13 +55,15 @@ function options = Settings_IF(varargin)
 %                   'p'  - periodical
 %                   'r'  - reflection
 %  IF.alpha       ('ave') Parameter used for the mask length computation.
-%                           Allowed values [0,1] and 'ave'.
+%                           Allowed values [0,1], 'ave' or 'Almost_min'.
 %                           If set to 0 the mask length is proportinal to the 
 %                           minimum distance between two subsequent extrema.
 %                           If set to 1 then it is proportional to the 
 %                           maximum distance. If set to 'ave' the mask length 
 %                           equals round(2*Xi*(length of the signal)/
-%                           (number of extrema)).
+%                           (number of extrema)). Finally if set to
+%                           'Almost_min' it is set to a value close to the
+%                           minimum.
 %  IF.MaxInner    (200)   Maximum number of inner steps allowed.
 %
 % ------------------------------------------------------
