@@ -24,15 +24,16 @@ figure
 plot(t,z,'b','linewidth',2)
 set(gca,'fontsize', 20);
 
+
 %%
 
 opts=Settings_IF('IF.delta',10^-3,'IF.NIMFs',1,'plots',0,'IF.Xi',2,'IF.extensionType','p','IF.alpha','ave');
 
-[IMF,logM] = IF_v5(z,opts);
+[IMF_2,logM] = IF_v6(z,opts);
 
-plot_imf_v8(IMF)
-%%
-plot_imf_v7(IMF,[x;y+ones(1,length(t))],t,'IMFs','Ground truth')
+plot_imf_v8(IMF_2)
+
+plot_imf_v7(IMF_2,[x;y+ones(1,length(t))],t,'IMFs','Ground truth')
 
 
 
