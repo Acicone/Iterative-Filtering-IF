@@ -12,7 +12,7 @@ To appear in the book Advances in Mechanics and Mathematics.
 ArXiv https://arxiv.org/abs/1710.04844
 
 A. Cicone, H. Zhou. Iterative Filtering algorithm numerical analysis 
-with new efficient implementations based on FFT.
+with new efficient implementations based on FFT. 
 ArXiv http://arxiv.org/abs/1802.01359
 
 
