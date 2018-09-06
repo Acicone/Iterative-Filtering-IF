@@ -40,7 +40,7 @@ plot_imf_v8(IMF_1)
 opts=Settings_IF('IF.delta',10^-2,'IF.NIMFs',100,'plots',0,'IF.Xi',3,'IF.extensionType','c','IF.alpha','ave');
 
 tic
-[IMF_2,logM] = IF_v6(x,opts);
+[IMF_2,logM] = IF_v6_2(x,opts);
 toc
 
 plot_imf_v8(IMF_2)
