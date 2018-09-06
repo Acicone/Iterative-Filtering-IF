@@ -3,7 +3,7 @@ Iterative method for the decompostion of non-stationary signals
 
 Please refer to Example_v5.m and Example_real_life_v1.m for examples of how to use the code.
 
-Version 6.3 works for any kind boundary extensions of a signal, whereas version 8.3 works only for periodical extesnion at the boundaries, but is made super fast thanks to the FFT.
+Version 6.2 works for any kind boundary extensions of a signal, whereas version 8.3 works only for periodical extesnion at the boundaries, but is made super fast thanks to the FFT.
 
 Please cite our work:
 A. Cicone, J. Liu, H. Zhou. Adaptive Local Iterative Filtering for Signal Decomposition and Instantaneous Frequency analysis. Applied and Computational Harmonic Analysis, Volume 41, Issue 2, September 2016, Pages 384-411. doi:10.1016/j.acha.2016.03.001
