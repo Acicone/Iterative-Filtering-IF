@@ -1,6 +1,6 @@
 % Test Example
 %
-% Example 1 page 16
+% Example 7 page 25 - Length of the day dataset
 %
 %  Ref: A. Cicone, J. Liu, H. Zhou. 'Adaptive Local Iterative Filtering for 
 %  Signal Decomposition and Instantaneous Frequency analysis'. Applied and 
@@ -15,39 +15,35 @@
 %  A. Cicone, H. Zhou. 'Iterative Filtering algorithm numerical analysis 
 %  with new efficient implementations based on FFT'
 %  ArXiv http://arxiv.org/abs/1802.01359
+%
+% dataset obtained from http://hpiers.obspm.fr/eoppc/eop/eopc04/eopc04.62-now
 
-dt=0.001;
-
-t=0:0.001:1;
-
-x=(2*(t-0.5).^2+0.2).*sin(20*pi*t+0.2*cos(40*pi*t));
-
-y=4*(t-0.5).^2;
-
-z=x+y+1;
-
-plot_imf_v8([x;y+ones(1,length(t))])
+load LengthOftheDay_LOD_ALIF_paper
 
 figure
-plot(t,z,'b','linewidth',2)
+plot(x,'b')
 set(gca,'fontsize', 20);
 
 %%
 
-[IMF0,logM] = IF_v8_3(z);
+opts=Settings_IF_v1('IF.delta',10^-2,'IF.Xi',3);
 
-plot_imf_v8(IMF0)
+tic
+[IMF_1,logM] = IF_v8_3(x,opts);
+toc
 
-%%
+plot_imf_v8(IMF_1)
 
-opts=Settings_IF_v1('IF.Xi',2,'IF.alpha','ave');
-
-[IMF,logM] = IF_v8_3(z,opts);
-
-plot_imf_v8(IMF)
 
 %%
-plot_imf_v7(IMF,[x;y+ones(1,length(t))],t,'IMFs','Ground truth')
+
+opts=Settings_IF('IF.delta',10^-2,'IF.NIMFs',100,'plots',0,'IF.Xi',3,'IF.extensionType','c','IF.alpha','ave');
+
+tic
+[IMF_2,logM] = IF_v6(x,opts);
+toc
+
+plot_imf_v8(IMF_2)
 
 
 
