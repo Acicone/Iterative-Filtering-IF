@@ -9,12 +9,14 @@
 %  ArXiv http://arxiv.org/abs/1411.6051
 %
 %  A. Cicone. 'Nonstationary signal decomposition for dummies'. 
-%  To appear in the book Advances in Mechanics and Mathematics.
+%  Chapter in the book: Advances in Mathematical Methods and High 
+%  Performance Computing. Springer, 2019
 %  ArXiv https://arxiv.org/abs/1710.04844
 %
-%  A. Cicone, H. Zhou. 'Iterative Filtering algorithm numerical analysis 
-%  with new efficient implementations based on FFT'
+%  A. Cicone, H. Zhou. 'Numerical Analysis for Iterative Filtering with 
+%  New Efficient Implementations Based on FFT'
 %  ArXiv http://arxiv.org/abs/1802.01359
+
 
 dt=0.001;
 

@@ -75,7 +75,7 @@ function options = Settings_IF_v1(varargin)
 %  Executes algorithm IF_v8_3 with delta = 0.08, stops after we have at most 5 IMFs and a trend, it produces plots.                            
 % ------------------------------------------------------      
 %
-% See also IF_v8_3
+% See also IF_v6_2 and FIF_v1
 %
 %  Ref: A. Cicone, J. Liu, H. Zhou. 'Adaptive Local Iterative Filtering for 
 %  Signal Decomposition and Instantaneous Frequency analysis'. Applied and 
@@ -84,12 +84,14 @@ function options = Settings_IF_v1(varargin)
 %  ArXiv http://arxiv.org/abs/1411.6051
 %
 %  A. Cicone. 'Nonstationary signal decomposition for dummies'. 
-%  To appear in the book Advances in Mechanics and Mathematics.
+%  Chapter in the book: Advances in Mathematical Methods and High 
+%  Performance Computing. Springer, 2019
 %  ArXiv https://arxiv.org/abs/1710.04844
 %
-%  A. Cicone, H. Zhou. 'Iterative Filtering algorithm numerical analysis 
-%  with new efficient implementations based on FFT'
+%  A. Cicone, H. Zhou. 'Numerical Analysis for Iterative Filtering with 
+%  New Efficient Implementations Based on FFT'
 %  ArXiv http://arxiv.org/abs/1802.01359
+%
 % (Ripped from sdpsettings.m by Johan Lufberg)
 
 

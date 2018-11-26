@@ -34,6 +34,16 @@ function [IMF,logM] = IF_v6_2(f,options,M)
 %  Computational Harmonic Analysis, Volume 41, Issue 2, September 2016, 
 %  Pages 384-411. doi:10.1016/j.acha.2016.03.001
 %  ArXiv http://arxiv.org/abs/1411.6051
+%
+%  A. Cicone. 'Nonstationary signal decomposition for dummies'. 
+%  Chapter in the book: Advances in Mathematical Methods and High 
+%  Performance Computing. Springer, 2019
+%  ArXiv https://arxiv.org/abs/1710.04844
+%
+%  A. Cicone, H. Zhou. 'Numerical Analysis for Iterative Filtering with 
+%  New Efficient Implementations Based on FFT'
+%  ArXiv http://arxiv.org/abs/1802.01359
+%
 
 
 %% deal with the input
